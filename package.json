@@ -1,0 +1,23 @@
+{
+  "name": "focusing",
+  "version": "1.0.0",
+  "description": "Focusing tracks your focus and helps you stay on task.",
+  "main": "dist/index.js",
+  "keywords": [
+    "focus",
+    "productivity",
+    "time management"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vantol Bennett",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "vite": "^4.4.6"
+  }
+}
