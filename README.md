@@ -1,7 +1,7 @@
 
 ---
 
-# Your Focus
+# Focus
 
 Your Focusing Library is a JavaScript library that helps track the number of words typed by the user and set target goals for word count or time spent on a task. It also provides basic user profile information based on the user's computer.
 
@@ -39,7 +39,7 @@ console.log("Word count:", wordCount); // Output: Word count: 9
 To measure the time spent on a task, you can use the `startTimer` and `stopTimer` functions. The `getElapsedTime` function returns the time duration in seconds:
 
 ```javascript
-import { startTimer, stopTimer, getElapsedTime } from 'your-focusing-library';
+import { startTimer, stopTimer, getElapsedTime } from 'focusing';
 
 startTimer();
 
@@ -56,7 +56,7 @@ console.log("Time spent:", elapsedTime, "seconds");
 You can set target goals for word count or time spent on a task using the `setWordGoal` and `setTimeGoal` functions:
 
 ```javascript
-import { setWordGoal, setTimeGoal } from 'your-focusing-library';
+import { setWordGoal, setTimeGoal } from 'focusing';
 
 setWordGoal(500); // Set a goal of typing 500 words
 setTimeGoal(1800); // Set a goal of spending 1800 seconds (30 minutes) on the task
@@ -67,7 +67,7 @@ setTimeGoal(1800); // Set a goal of spending 1800 seconds (30 minutes) on the ta
 To access basic user profile information, you can use the `getUserProfile` function:
 
 ```javascript
-import { getUserProfile } from 'your-focusing-library';
+import { getUserProfile } from 'focusing';
 
 const userProfile = getUserProfile();
 console.log("User Profile:", userProfile);
@@ -81,5 +81,5 @@ Before contributing, please read our [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
 
-Your Focusing Library is open-source software licensed under the [MIT License](LICENSE).
+Focusing Library is open-source software licensed under the [MIT License](LICENSE).
 
