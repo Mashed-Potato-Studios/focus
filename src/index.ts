@@ -1,1 +1,1 @@
-export { focus } from "./lib/focus-api"
+export { focusing } from "./lib/focus-api"
