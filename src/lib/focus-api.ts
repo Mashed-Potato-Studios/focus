@@ -3,7 +3,7 @@ import { startTracking, endTracking, getTrackingTime } from "../utils/timeTracki
 import { WordTracking } from "../plugins/wordTracking";
 
 const wordTracker = WordTracking.getInstance();
-export const focus = {
+export const focusing = {
     setWordGoal,
     setTimeGoal,
     startTracking,
