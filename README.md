@@ -3,7 +3,7 @@
 
 # Focus
 
-Your Focusing Library is a JavaScript library that helps track the number of words typed by the user and set target goals for word count or time spent on a task. It also provides basic user profile information based on the user's computer.
+Focusing Library is a JavaScript library that helps track the number of words typed by the user and set target goals for word count or time spent on a task. It also provides basic user profile information based on the user's computer.
 
 ## Features
 
@@ -54,26 +54,29 @@ console.log("Time spent:", elapsedTime, "seconds");
 ```javascript
 import { WordTracking } from 'focusing';
 
-// Initialize the WordTracking instance
-const wordTracker = WordTracking.getInstance();
-
-// Initialize the WordTracking instance with a custom word matching pattern
-const customWordPattern = /(?:\w+|-)/gi;
-const wordTracker = WordTracking.getInstance(customWordPattern);
-
+// Initialize the WordTracking instance with custom word boundary characters
+const wordBoundaryChars = [' ', '-', '_'];
+const wordTracker = WordTracking.getInstance(wordBoundaryChars);
 
 // Start tracking user input
 wordTracker.startTracking();
 
 // Wait for a few seconds (or as the user types)
 
-// Get the current word count
-const wordCount = wordTracker.getWordCount();
-console.log(wordCount); // Output: The number of words typed by the user
+// Get the current word count using the default counting mode ('all')
+const allWordsCount = wordTracker.getWordCount();
+console.log(allWordsCount); // Output: The number of all words typed by the user
+
+// Get the current word count using the 'unique' counting mode
+const uniqueWordsCount = wordTracker.getWordCount(CountingMode.UniqueWords);
+console.log(uniqueWordsCount); // Output: The number of unique words typed by the user
+
+// Get the current word count using the 'specific' counting mode
+const specificWordOccurrencesCount = wordTracker.getWordCount(CountingMode.SpecificWordOccurrences);
+console.log(specificWordOccurrencesCount); // Output: The total occurrences of specific words typed by the user
 
 // Stop tracking user input (if necessary)
 wordTracker.stopTracking();
-
 ```
 
 ### Goal Setting
