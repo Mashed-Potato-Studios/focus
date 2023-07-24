@@ -51,6 +51,26 @@ const elapsedTime = getElapsedTime();
 console.log("Time spent:", elapsedTime, "seconds");
 ```
 
+```javascript
+import { WordTracking } from 'focusing';
+
+// Initialize the WordTracking instance
+const wordTracker = WordTracking.getInstance();
+
+// Start tracking user input
+wordTracker.startTracking();
+
+// Wait for a few seconds (or as the user types)
+
+// Get the current word count
+const wordCount = wordTracker.getWordCount();
+console.log(wordCount); // Output: The number of words typed by the user
+
+// Stop tracking user input (if necessary)
+wordTracker.stopTracking();
+
+```
+
 ### Goal Setting
 
 You can set target goals for word count or time spent on a task using the `setWordGoal` and `setTimeGoal` functions:
