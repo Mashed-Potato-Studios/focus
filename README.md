@@ -1,7 +1,7 @@
 
 ---
 
-# Focus
+# Focusing
 
 Focusing Library is a JavaScript library that helps track the number of words typed by the user and set target goals for word count or time spent on a task. It also provides basic user profile information based on the user's computer.
 
