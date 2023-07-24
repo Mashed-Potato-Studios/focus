@@ -1,6 +1,6 @@
 {
   "name": "focusing",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Focusing tracks your focus and helps you stay on task.",
   "main": "dist/index.js",
   "keywords": [
@@ -19,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Mashed-Potato-Studios/focus.git"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
