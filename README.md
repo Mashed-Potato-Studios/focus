@@ -57,6 +57,11 @@ import { WordTracking } from 'focusing';
 // Initialize the WordTracking instance
 const wordTracker = WordTracking.getInstance();
 
+// Initialize the WordTracking instance with a custom word matching pattern
+const customWordPattern = /(?:\w+|-)/gi;
+const wordTracker = WordTracking.getInstance(customWordPattern);
+
+
 // Start tracking user input
 wordTracker.startTracking();
 
