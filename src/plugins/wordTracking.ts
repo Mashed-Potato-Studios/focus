@@ -13,15 +13,15 @@ export class WordTracking {
     private tracking: boolean;
     private trackedWordCount: number;
 
-    constructor() {
-        this.wordRegex = /\b\w+/gi;
+    private constructor(wordRegex: RegExp = /\b\w+/gi) {
+        this.wordRegex = wordRegex;
         this.tracking = false;
         this.trackedWordCount = 0;
     }
 
-    static getInstance(): WordTracking {
+    static getInstance(wordRegex?: RegExp): WordTracking {
         if (!WordTracking.instance) {
-            WordTracking.instance = new WordTracking();
+            WordTracking.instance = new WordTracking(wordRegex);
         }
         return WordTracking.instance;
     }
