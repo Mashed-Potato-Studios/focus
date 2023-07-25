@@ -75,6 +75,19 @@ console.log(uniqueWordsCount); // Output: The number of unique words typed by th
 const specificWordOccurrencesCount = wordTracker.getWordCount(CountingMode.SpecificWordOccurrences);
 console.log(specificWordOccurrencesCount); // Output: The total occurrences of specific words typed by the user
 
+// Subscribe to word count change events
+const wordCountListener = (count: number) => {
+  console.log('Word count changed:', count);
+};
+
+wordTracker.subscribe(wordCountListener);
+
+// Wait for a few seconds (or as the user types)
+
+// Unsubscribe from word count change events (if necessary)
+wordTracker.unsubscribe(wordCountListener);
+
+
 // Stop tracking user input (if necessary)
 wordTracker.stopTracking();
 ```
