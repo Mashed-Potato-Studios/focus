@@ -109,13 +109,14 @@ export class WordTracking {
     }
 
     // @ts-ignore
-    updateWordCount(event: WordTrackingEvent, wordCount: number) {
-        // @ts-ignore
-        const wordCount = this.countWords(event.data)
-        // @ts-ignore
-        event.context.data = wordCount
-
-    }
+    // updateWordCount(event: WordTrackingEvent, wordCount: number) {
+    //     this._wordCount = wordCount;
+    //     // @ts-ignore
+    //     const wordCount = this.countWords(event.data)
+    //     // @ts-ignore
+    //     event.context.data = wordCount
+    //
+    // }
 
     getWordCount(mode: CountingMode = CountingMode.AllWords): number {
         return this.countWords([...this.wordCountMap.keys()].join(' '), mode);
