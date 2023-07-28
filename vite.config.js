@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
     build: {
         lib: {
-            entry: 'src/index.js',
+            entry: 'src/index.ts',
             name: 'Focusing'
         },
         rollupOptions: {
