@@ -1,7 +1,7 @@
 {
   "name": "focusing",
   "type": "module",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Focusing tracks your focus and helps you stay on task.",
   "main": "./dist/focusing.umd.js",
   "module": "./dist/focusing.mjs",
