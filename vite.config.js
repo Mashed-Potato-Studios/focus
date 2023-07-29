@@ -3,7 +3,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: 'src/index.ts',
-            name: 'Focusing'
+            name: 'focusing'
         },
         rollupOptions: {
 
