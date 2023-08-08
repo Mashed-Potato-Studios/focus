@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
+import * as path from "path";
 export default defineConfig({
     build: {
         lib: {
-            entry: 'src/index.ts',
-            name: 'focusing'
+            entry: path.resolve(__dirname, 'src/index.ts'),
+            name: 'focusing',
+            fileName: (format) => `focusing.${format}.js`
         },
         rollupOptions: {
-
         }
 
     }

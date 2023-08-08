@@ -3,11 +3,12 @@
   "type": "module",
   "version": "1.1.7",
   "description": "Focusing tracks your focus and helps you stay on task.",
-  "main": "./dist/focusing.umd.js",
-  "module": "./dist/focusing.mjs",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "./dist/focusing.es.js",
   "exports": {
     ".": {
-      "import": "./dist/focusing.mjs",
+      "import": "./dist/focusing.es.js",
       "require": "./dist/focusing.umd.js"
     }
   },
